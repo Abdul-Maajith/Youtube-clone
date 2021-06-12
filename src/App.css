@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: "poppins";
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100; /*nothing can move above this*/
+  background-color: white;
+}
+
+.header__logo {
+  height: 70px;
+  object-fit: contain;
+  margin-left: 15px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  border: 1px solid lightgrey;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  height: 20px;
+}
+
+.header__inputButton {
+  width: 50px !important;
+  background-color: #fafafa;
+  border-left: 1px solid lightgrey;
+  color: gray;
+  border: none; 
+  border-left: 1px solid lightgrey;
+  text-align: center;
+}
+
+.search__icon {
+  padding-top: 3px;
+}
+
+.header__icon {
+  margin-right: 15px;
+}
+
+.app__page {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0.17; /*To get 20% of portion*/
+}
+
+.sidebarRow {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.sidebarRow__icons {
+  color: #606060;
+  font-size: larger !important;
+}
+
+.sidebarRow__title {
+  flex: 1;  /*Title use as much as width it can!*/
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sidebarRow:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+/* > -- targeting! */
+.sidebarRow:hover > .sidebarRow__title {
+  font-weight: bold;
+}
+
+.sidebarRow.selected {
+  background-color: lightgrey;
+}
+
+.sidebarRow.selected > .sidebarRow__icons{
+  color: red;
+}
+
+.sidebarRow.selected > .sidebarRow__title{
+  font-weight: bold;
+}
+
+.sidebar > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgrey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.videos {
+  flex: 0.83  ; /*To get 80% of portion*/
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  padding-bottom: 0;
+}
+
+.videos > h2 {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.videoCard {
+  margin-bottom: 40px;
+  width: 270px;
+}
+
+.videoCard__Thumbnail {
+  height: 140px;
+  width: 250px;
+}
+
+.videoGrid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.videoCard__info {
+  display: flex;
+  margin-top: 10px;
+  padding-right: 30px;
+}
+
+.videoCard__text{
+  margin-left: 15px;
+}
+
+.videoCard__text > h4{
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.videoCard__text > p{
+  font-size: 14px;
+  color: gray;
+}
+
+.videoCard__avatar { 
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.searchPage {
+  flex: 0.83;
+  background-color: #f9f9f9;
+  padding: 20px 20px;
+}
+
+.searchPage__filter {
+  display: flex;
+  align-items: center;
+  color: #606060;
+  font-size: xx-small !important;
+}
+
+.searchPage__filter > h2 {
+  margin-left: 10px;
+}
+
+.searchPage > hr {
+  height: 1px;
+  border: 0;
+  background-color: lightgrey;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.channelRow {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.channelRow__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.channelRow__text > p {
+  color: #606060;
+  font-size: small !important;
+}
+
+.channelRow__logo {
+  margin: 10px 60px;
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.channelRow__text > h4 {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.videoRow {
+  display: flex;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.videoRow > img{
+  object-fit: contain;
+  width: 246px;
+  height: 138px;
+}
+
+.videoRow__text{
+  margin-left: 14px;
+}
+
+.videoRow__description {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #606060;
+}
+
+.videoRow__headline {
+  font-size: 12px;
+  color: #606060;
+}
+
+.videoRow__subscriber{
+  font-weight: bolder;
+  color: rgb(84, 157, 211);
+}
+
+.videoRow__subs {
+  background-color: lightgrey;
+  padding: 2px;
+}
